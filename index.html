@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Analytics | Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Akash Analytics, specializing in Data Analysis, Data Cleaning, Python, PowerBI, and Excel. Discover interactive dashboards and data projects.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Gradient Glows -->
+    <div class="glow-bg">
+        <div class="glow-sphere sphere-1"></div>
+        <div class="glow-sphere sphere-2"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Akash<span class="logo-accent">.Analytics /&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">Why Akash Analytics</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#dashboard" class="nav-link">Interactive Demo</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link contact-btn-nav">Get In Touch</a>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-menu">
+            <button class="mobile-nav-close" aria-label="Close Navigation">
+                <i data-lucide="x"></i>
+            </button>
+            <a href="#about" class="mobile-nav-link">Why Akash Analytics</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#dashboard" class="mobile-nav-link">Interactive Demo</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#contact" class="mobile-nav-link mobile-contact-btn">Get In Touch</a>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ===== PROFILE SECTION ===== -->
+        <section id="profile" class="profile-section">
+            <div class="container">
+                <div class="profile-box card-glow">
+
+                    <!-- Left: Photo -->
+                    <div class="profile-photo-col">
+                        <div class="profile-photo-ring">
+                            <img src="profile.png" alt="Akash Sonawane - Data Analyst" class="profile-photo">
+                        </div>
+                        <div class="profile-tagline-box">
+                            <i data-lucide="quote" class="quote-icon"></i>
+                            <p>"Turning Data into Actionable Insights for Smarter Business Decisions."</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Info -->
+                    <div class="profile-info-col">
+                        <div class="profile-name-block">
+                            <h1 class="profile-name">Akash Sonawane</h1>
+                            <span class="profile-role-badge"><i data-lucide="bar-chart-2"></i> Data Analyst</span>
+                        </div>
+
+                        <p class="profile-bio">
+                            I am a passionate Data Analyst specializing in transforming raw data into meaningful insights that help businesses make informed decisions. With expertise in <strong>Power BI, SQL, Excel,</strong> and <strong>Data Visualization</strong>, I create interactive dashboards, automate reports, and analyze complex datasets to uncover trends and opportunities.
+                        </p>
+
+                        <div class="profile-services">
+                            <h3 class="services-heading">My Services</h3>
+                            <ul class="services-list">
+                                <li><i data-lucide="check-circle-2"></i> Data Cleaning &amp; Transformation</li>
+                                <li><i data-lucide="check-circle-2"></i> Interactive Power BI Dashboards</li>
+                                <li><i data-lucide="check-circle-2"></i> SQL Data Analysis &amp; Query Optimization</li>
+                                <li><i data-lucide="check-circle-2"></i> Excel Reports &amp; Automation</li>
+                                <li><i data-lucide="check-circle-2"></i> KPI Tracking &amp; Business Intelligence</li>
+                                <li><i data-lucide="check-circle-2"></i> Data Visualization &amp; Reporting</li>
+                            </ul>
+                        </div>
+
+                        <div class="profile-skills">
+                            <h3 class="services-heading">Skills</h3>
+                            <div class="profile-skill-pills">
+                                <span class="p-skill-pill">Power BI</span>
+                                <span class="p-skill-pill">SQL</span>
+                                <span class="p-skill-pill">Excel</span>
+                                <span class="p-skill-pill">Data Analysis</span>
+                                <span class="p-skill-pill">Data Visualization</span>
+                                <span class="p-skill-pill">Business Intelligence</span>
+                                <span class="p-skill-pill">Dashboard Development</span>
+                                <span class="p-skill-pill">Reporting &amp; Insights</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge fade-in">
+                        <span class="badge-dot"></span> Available for Data Analytics Projects
+                    </div>
+                    <h1 class="hero-title fade-in">
+                        Turning Raw <span class="gradient-text">Chaos</span> Into <span class="gradient-text">Decisive Insights</span>
+                    </h1>
+                    <p class="hero-subtitle fade-in">
+                        I am Akash. I extract hidden stories from raw datasets, automate repetitive work, clean chaotic databases, and build interactive dashboards that drive smarter business choices.
+                    </p>
+                    <div class="hero-tech-tags fade-in">
+                        <span class="tech-tag"><i data-lucide="code-2" class="tag-icon"></i> Python</span>
+                        <span class="tech-tag"><i data-lucide="bar-chart-3" class="tag-icon"></i> PowerBI</span>
+                        <span class="tech-tag"><i data-lucide="table" class="tag-icon"></i> MS Excel</span>
+                        <span class="tech-tag"><i data-lucide="sparkles" class="tag-icon"></i> Data Cleaning</span>
+                        <span class="tech-tag"><i data-lucide="pie-chart" class="tag-icon"></i> Data Analysis</span>
+                    </div>
+                    <div class="hero-actions fade-in">
+                        <a href="#dashboard" class="btn btn-primary">
+                            <span>Try Interactive Demo</span>
+                            <i data-lucide="arrow-right" class="btn-icon"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span>Read My Story</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <!-- Glassmorphic Mock Code Window -->
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">akash_analytics.py</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd
+<span class="code-keyword">import</span> numpy <span class="code-keyword">as</span> np
+
+<span class="code-comment"># Loading messy raw business data</span>
+df = pd.read_csv(<span class="code-string">"dirty_business_logs.csv"</span>)
+
+<span class="code-comment"># Executing cleaning routines</span>
+df.dropna(subset=[<span class="code-string">"Revenue"</span>, <span class="code-string">"CustomerID"</span>], inplace=<span class="code-keyword">True</span>)
+df[<span class="code-string">"Region"</span>] = df[<span class="code-string">"Region"</span>].str.strip().str.title()
+df[<span class="code-string">"Revenue"</span>] = df[<span class="code-string">"Revenue"</span>].replace(<span class="code-string">r'[\$,]'</span>, <span class="code-string">''</span>, regex=<span class="code-keyword">True</span>).astype(float)
+
+<span class="code-comment"># Extracting actionable insights</span>
+kpis = {
+    <span class="code-string">"Total_Sales"</span>: df[<span class="code-string">"Revenue"</span>].sum(),
+    <span class="code-string">"Avg_Order_Val"</span>: df[<span class="code-string">"Revenue"</span>].mean(),
+    <span class="code-string">"Active_Users"</span>: df[<span class="code-string">"CustomerID"</span>].nunique()
+}
+
+print(<span class="code-string">"✨ Dashboard-ready dataset generated!"</span>)
+print(<span class="code-keyword">f</span><span class="code-string">"Revenue tracked: ${kpis['Total_Sales']:,.2f}"</span>)</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Analytics Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Philosophy</span>
+                    <h2 class="section-title">Why I Do Data Analytics</h2>
+                    <p class="section-subtitle">
+                        Data isn't just rows and columns on a screen. It's the digital footprint of human habits, operational bottlenecks, and business growth.
+                    </p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card card-glow">
+                        <div class="card-icon-container bg-red">
+                            <i data-lucide="shield-alert"></i>
+                        </div>
+                        <h3>The Chaos: Untamed Data</h3>
+                        <p>
+                            Most businesses operate in a storm of unstructured data: messy spreadsheets, inconsistent naming, duplicate values, and missing records. This makes accurate decisions nearly impossible and wastes hours of valuable employee time.
+                        </p>
+                    </div>
+                    <div class="about-card card-glow">
+                        <div class="card-icon-container bg-indigo">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3>My Process: Systemized Clarity</h3>
+                        <p>
+                            I build automated workflows in Python to clean and structure raw inputs, design secure and scalable PowerBI schemas, and leverage advanced Excel formulas. I transform chaotic tables into a pristine, reliable source of truth.
+                        </p>
+                    </div>
+                    <div class="about-card card-glow">
+                        <div class="card-icon-container bg-emerald">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h3>The Goal: Strategic Growth</h3>
+                        <p>
+                            Clean data unlocks powerful storytelling. I build intuitive dashboards that explain exactly what happened, why it happened, and what actions to take next. My goal is to make analytics accessible, beautiful, and highly actionable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Technical Arsenal</span>
+                    <h2 class="section-title">Core Skills & Tools</h2>
+                    <p class="section-subtitle">A balanced toolkit designed to take data from dirty, raw formats to automated dashboards and statistical models.</p>
+                </div>
+                <div class="skills-grid">
+                    <!-- Python -->
+                    <div class="skill-card card-glow">
+                        <div class="skill-icon">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3>Python Development</h3>
+                        <p>Writing scripts to automate data collection, perform deep analysis, and deploy cleaning logic.</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-pill">Pandas</span></li>
+                            <li><span class="skill-pill">NumPy</span></li>
+                            <li><span class="skill-pill">Scikit-learn</span></li>
+                            <li><span class="skill-pill">BeautifulSoup</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- PowerBI -->
+                    <div class="skill-card card-glow">
+                        <div class="skill-icon">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <h3>PowerBI Dashboards</h3>
+                        <p>Creating interactive business intelligence models, custom data visualization schemas, and DAX calculations.</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-pill">DAX Formulas</span></li>
+                            <li><span class="skill-pill">Data Modeling</span></li>
+                            <li><span class="skill-pill">Power Query</span></li>
+                            <li><span class="skill-pill">Interactive UX</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- MS Excel -->
+                    <div class="skill-card card-glow">
+                        <div class="skill-icon">
+                            <i data-lucide="table"></i>
+                        </div>
+                        <h3>Advanced Excel</h3>
+                        <p>Building financial models, pivot-table dashboards, and custom VBA macros to speed up repetitive tasks.</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-pill">VLOOKUP/XLOOKUP</span></li>
+                            <li><span class="skill-pill">VBA Macros</span></li>
+                            <li><span class="skill-pill">Pivot Charts</span></li>
+                            <li><span class="skill-pill">Power Pivot</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Cleaning -->
+                    <div class="skill-card card-glow">
+                        <div class="skill-icon">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <h3>Data Cleaning</h3>
+                        <p>Standardizing strings, handling null values, resolving duplicate keys, and writing regex patterns to scrape data.</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-pill">Regex Matching</span></li>
+                            <li><span class="skill-pill">Null Imputation</span></li>
+                            <li><span class="skill-pill">Outlier Removal</span></li>
+                            <li><span class="skill-pill">Encoding Fixes</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Analysis -->
+                    <div class="skill-card card-glow">
+                        <div class="skill-icon">
+                            <i data-lucide="pie-chart"></i>
+                        </div>
+                        <h3>Data Analysis</h3>
+                        <p>Conducting cohort analysis, predictive modeling, regression tests, and KPI metrics evaluation.</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-pill">Cohort Analysis</span></li>
+                            <li><span class="skill-pill">A/B Testing</span></li>
+                            <li><span class="skill-pill">Trend Forecasting</span></li>
+                            <li><span class="skill-pill">Statistical Math</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Playground Section -->
+        <section id="dashboard" class="playground-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Interactive Proof</span>
+                    <h2 class="section-title">See My Skills in Action</h2>
+                    <p class="section-subtitle">Interact with the data dashboards and cleaning simulator below to see real-time data transformations.</p>
+                </div>
+
+                <!-- Live Dashboard Demo -->
+                <div class="playground-wrapper card-glow">
+                    <div class="playground-header">
+                        <div class="tab-buttons">
+                            <button id="tab-dash" class="tab-btn active"><i data-lucide="layout-dashboard"></i> Analytics Dashboard</button>
+                            <button id="tab-clean" class="tab-btn"><i data-lucide="wand2"></i> Data Cleaning Simulator</button>
+                        </div>
+                        <div class="playground-window-controls">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                        </div>
+                    </div>
+
+                    <div class="playground-body">
+                        <!-- Dashboard Panel -->
+                        <div id="panel-dash" class="panel active">
+                            <div class="dashboard-controls">
+                                <div class="dashboard-title-group">
+                                    <h3>Sales & Performance Overview</h3>
+                                    <p class="dash-subtitle">Visualizing trends and sales distribution by region</p>
+                                </div>
+                                <div class="region-selector">
+                                    <button class="region-btn active" data-region="all">Global</button>
+                                    <button class="region-btn" data-region="north">North Region</button>
+                                    <button class="region-btn" data-region="south">South Region</button>
+                                    <button class="region-btn" data-region="west">West Region</button>
+                                </div>
+                            </div>
+                            <div class="dashboard-kpi-grid">
+                                <div class="kpi-card">
+                                    <span class="kpi-label">Total Revenue</span>
+                                    <span id="kpi-revenue" class="kpi-val">$1,240,500</span>
+                                    <span class="kpi-trend positive"><i data-lucide="arrow-up-right"></i> +12.4% MoM</span>
+                                </div>
+                                <div class="kpi-card">
+                                    <span class="kpi-label">Active Customers</span>
+                                    <span id="kpi-customers" class="kpi-val">12,430</span>
+                                    <span class="kpi-trend positive"><i data-lucide="arrow-up-right"></i> +8.2% MoM</span>
+                                </div>
+                                <div class="kpi-card">
+                                    <span class="kpi-label">Avg Order Value</span>
+                                    <span id="kpi-aov" class="kpi-val">$99.80</span>
+                                    <span class="kpi-trend negative"><i data-lucide="arrow-down-right"></i> -1.5% MoM</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-charts-grid">
+                                <div class="chart-container">
+                                    <h4>Revenue Growth Trend</h4>
+                                    <canvas id="revenueChart"></canvas>
+                                </div>
+                                <div class="chart-container">
+                                    <h4>Sales Distribution by Category</h4>
+                                    <canvas id="categoryChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Data Cleaning Panel -->
+                        <div id="panel-clean" class="panel">
+                            <div class="cleaning-controls">
+                                <div class="cleaning-info">
+                                    <h3>Automated Python Cleaning Engine</h3>
+                                    <p class="dash-subtitle">Simulate pandas data frame transformations instantly</p>
+                                </div>
+                                <button id="btn-run-cleaning" class="btn btn-primary btn-sparkle">
+                                    <i data-lucide="sparkles"></i>
+                                    <span>Run Python Routine</span>
+                                </button>
+                            </div>
+
+                            <div class="cleaning-tables-grid">
+                                <!-- Messy Table -->
+                                <div class="table-container">
+                                    <div class="table-header-title text-red">
+                                        <i data-lucide="alert-triangle"></i> Messy Raw Data (Dirty Inputs)
+                                    </div>
+                                    <div class="table-scroll">
+                                        <table id="dirty-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Customer Name</th>
+                                                    <th>Product Code</th>
+                                                    <th>Transaction Amount</th>
+                                                    <th>Date Raw</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>akash   analytics</td>
+                                                    <td>Py-Dash-101</td>
+                                                    <td>$ 1,200.00 USD</td>
+                                                    <td>07/06/2026</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NULL</td>
+                                                    <td>EXCEL-FORM</td>
+                                                    <td>950.5</td>
+                                                    <td>2026/06/02</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>john smith </td>
+                                                    <td>py-dash-101</td>
+                                                    <td>$450</td>
+                                                    <td>06-05-2026</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SARA CONNOR </td>
+                                                    <td>POWER-BI-PRO</td>
+                                                    <td>$3,100.99 USD</td>
+                                                    <td>06/04/2026</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>david lane</td>
+                                                    <td>NULL</td>
+                                                    <td>$ 120.00</td>
+                                                    <td>2026-06-01</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- Cleaned Table -->
+                                <div class="table-container">
+                                    <div class="table-header-title text-emerald">
+                                        <i data-lucide="check-circle-2"></i> Cleaned & Formatted Data (Tidy Output)
+                                    </div>
+                                    <div class="table-scroll">
+                                        <div id="cleaning-overlay" class="cleaning-overlay hidden">
+                                            <div class="loader-container">
+                                                <div class="spinner"></div>
+                                                <div id="console-logs" class="console-logs">
+                                                    <p>&gt; Initializing Pandas DataFrame...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table id="clean-table" class="blurred-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Customer Name</th>
+                                                    <th>Product Code</th>
+                                                    <th>Transaction Amount</th>
+                                                    <th>Standard Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="placeholder-row">
+                                                    <td colspan="4" class="td-center">Click "Run Python Routine" to process dataset.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Case Studies</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-subtitle">Real-world business problems solved with rigorous analysis and custom analytical tools.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card card-glow">
+                        <div class="project-image-mock p1-bg">
+                            <i data-lucide="shopping-bag" class="mock-img-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tools">PowerBI • Excel • SQL</span>
+                            <h3>E-Commerce Sales Insights Dashboard</h3>
+                            <p>Created an interactive dashboard connecting multiple databases, allowing stakeholders to track sales velocity, customer lifetime value (LTV), and seasonal regional metrics. Enabled direct export of automated Excel audit sheets.</p>
+                            <ul class="project-outcomes">
+                                <li><i data-lucide="check"></i> Automated weekly reports, saving 6 hours per week</li>
+                                <li><i data-lucide="check"></i> Visualized customer lifetime values with cohort models</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card card-glow">
+                        <div class="project-image-mock p2-bg">
+                            <i data-lucide="boxes" class="mock-img-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tools">Python • Pandas • Prophet</span>
+                            <h3>Automated Inventory Predictor</h3>
+                            <p>Developed a Python script to forecast retail stock demands. Cleaned messy CSV logs from multiple warehouse terminals, resolved inconsistencies, and integrated predictive modeling to reduce store inventory costs.</p>
+                            <ul class="project-outcomes">
+                                <li><i data-lucide="check"></i> 94% forecast precision on core retail categories</li>
+                                <li><i data-lucide="check"></i> Automatic alerts for low-inventory alerts</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card card-glow">
+                        <div class="project-image-mock p3-bg">
+                            <i data-lucide="users" class="mock-img-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tools">Python • Jupyter • Seaborn</span>
+                            <h3>SaaS Customer Retention Analytics</h3>
+                            <p>Conducted user activity analyses to find why users churned. Built regex-driven filters to clean chat logs and server entries, and ran regression models showing user drop-off triggers.</p>
+                            <ul class="project-outcomes">
+                                <li><i data-lucide="check"></i> Identified 3 main drop-off milestones</li>
+                                <li><i data-lucide="check"></i> Recommendations increased retention by 18%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-box card-glow">
+                    <div class="contact-info-panel">
+                        <h2>Let's Collaborate On Your Data</h2>
+                        <p>Need help cleaning complex datasets, building corporate PowerBI reports, or automation in Python? Reach out to start a conversation.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <div>
+                                    <span class="detail-label">Email Me</span>
+                                    <a href="mailto:akash.sonawan34@gmail.com" class="detail-val">akash.sonawan34@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <div>
+                                    <span class="detail-label">Call / WhatsApp</span>
+                                    <a href="tel:+919850642710" class="detail-val">+91 9850642710</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="linkedin"></i>
+                                <div>
+                                    <span class="detail-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/akash-sonawane-560781414" target="_blank" rel="noopener noreferrer" class="detail-val">linkedin.com/in/akash-sonawane-560781414</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" action="https://formsubmit.co/akash.sonawan34@gmail.com" method="POST" class="contact-form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New message from Akash Analytics Portfolio">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_honey" style="display:none">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+
+<div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required placeholder="+91 9876543210">
+</div>
+
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Description / Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Describe your data project or question..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">
+                            <span>Send Message</span>
+                            <i data-lucide="send" class="btn-icon"></i>
+                        </button>
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container footer-container">
+            <p>&copy; 2026 Akash Analytics. All rights reserved.</p>
+            <p class="footer-note">Designed & Built for Premium Performance</p>
+        </div>
+    </footer>
+
+    <!-- Script Injection -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+
+
+
+
+</body>
+</html>
